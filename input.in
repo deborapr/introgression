@@ -1,0 +1,28 @@
+10        1300       100     100   
+0.00025     0.00075    0.02    0.37  
+5.0         75         1500    500      4     3
+0           0          20      0  
+50          80         60      90  
+0.125       0          0
+
+T           N          L1       L2  
+mut         mut-mit    diff     Qmat 
+S           G          B        BM      P    nrmax
+IREAD       INISBIT    njump    nmax
+iini        ifin       jini     jfin
+WIDTH       INIFRAC    FRACRAND
+
+
+INISBIT 0 = random position 
+INISBIT 1 = localized
+IREAD = 0 --starts new run
+IREAD = 1 --read a file pop-someting.dat and continues from there
+nmax = maximum population size
+nmax = 0 -> maximum is N
+nwr = number of individuals for genealogy
+P > 1
+
+
+INIFRAC = initial fraction of 1's 
+FRACRAND = 1 -> random positions
+FRACRAND = 0 -> first positions
